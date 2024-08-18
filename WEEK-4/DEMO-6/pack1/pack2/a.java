@@ -1,6 +1,6 @@
 package pack2;
 public class a{
-    void print(){
+    public void print(){
         System.out.println("Hello world!!");
     }
 }
