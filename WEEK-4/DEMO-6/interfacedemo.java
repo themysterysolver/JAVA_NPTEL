@@ -3,6 +3,9 @@ interface geoAnalyser{
     float area();
     float perimeter();
 }
+interface Drawable {
+    void draw();
+}
 class circle implements geoAnalyser{
     float radius;
     circle(float r){
@@ -13,6 +16,9 @@ class circle implements geoAnalyser{
     }
     public float perimeter(){
         return (2*pi*radius);
+    }
+    public void draw(){
+        System.out.println("Drawing a circle of radius "+radius);
     }
 }
 class rectangle implements geoAnalyser{
@@ -27,6 +33,9 @@ class rectangle implements geoAnalyser{
     public float perimeter(){
         return (2*(width+length));
     }
+    public void draw(){
+        System.out.printf("Drawing a rectangle of length:%.3f and width:%.3f ",length,width);
+    }
 }
 
 class interfacedemo{
@@ -38,5 +47,7 @@ class interfacedemo{
         rectangle r=new rectangle(5,10);
         display(c.area(),c.perimeter());
         display(r.area(),r.perimeter());
+        c.draw();
+        r.draw();
     }
 }
