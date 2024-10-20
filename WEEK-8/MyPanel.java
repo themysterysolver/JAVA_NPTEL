@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class MyPanel {
     public static void main(String[] args) {
-        Frame f = new Frame("My first use of frame!!");
+        Frame f = new Frame("My first use of Panel on Frame!!");
         f.setSize(250, 250);              // Set the size of the frame
         f.setBackground(Color.CYAN);
         f.setLayout(null);                // Use null layout for manual positioning
