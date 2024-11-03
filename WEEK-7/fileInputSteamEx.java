@@ -15,5 +15,4 @@ class fileInputSteamEx{
             e.printStackTrace();
         }
     }
-    
 }
